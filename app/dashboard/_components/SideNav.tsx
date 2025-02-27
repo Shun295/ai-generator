@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from 'react'
 import Image from 'next/image'
-import { FileClock, Home, Settings, WalletCards } from 'lucide-react'
+import { FileClock, Home, ImageIcon, Music, Settings } from 'lucide-react'
 import { usePathname } from 'next/navigation'
 
 
@@ -18,7 +18,11 @@ function SideNav() {
             icon: FileClock,
             path: '/dashboard/history'
         },
-        
+        {
+            name: 'Image Generator', 
+            icon: ImageIcon,  
+            path: '/dashboard/image-generator'
+        },
         {
             name: 'Setting',
             icon: Settings,
