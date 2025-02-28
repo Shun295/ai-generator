@@ -1,12 +1,12 @@
 import { UserProfile } from '@clerk/nextjs'
 import React from 'react'
 
-function Settings() {
+function SettingsPage() { // 🔹 Renamed from `Settings` to `SettingsPage` to avoid conflicts
   return (
     <div className='flex items-center justify-center h-full'>
-        <UserProfile routing="hash"/>
+        <UserProfile routing="hash" />
     </div>
   )
 }
 
-export default Settings
+export default SettingsPage;
